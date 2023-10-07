@@ -1,0 +1,170 @@
+import { Dimensions, StatusBar, StyleSheet } from "react-native";
+import Colors from "../../assets/Colors";
+
+
+const HomeStyleSheet = StyleSheet.create({
+    home:{
+        display:"flex",
+        justifyContent:'space-between',
+        alignItems:'center',
+        width:'100%',
+        height:Dimensions.get('screen').height - StatusBar.currentHeight,
+        gap:10,
+        paddingBottom:20,
+        shadowOpacity:.5
+    },
+    header:{
+        flexDirection:'row',
+        width:'100%',
+        justifyContent:'space-between',
+        paddingTop:20,
+        title:{
+            fontSize:25,
+            fontFamily:'Medium',
+            textTransform:'uppercase'
+        }
+    },
+    barCodeScanner:{
+        height:Dimensions.get('screen').height/1.9,
+        width:Dimensions.get('screen').width-50,
+        marginTop:20,
+        overflow:'hidden',
+        borderWidth:5,
+        borderRadius:50,
+        borderColor:Colors.secColor,
+        scan:{
+            position:'absolute',
+            top:0,
+            left:0,
+            width:'100%',
+            height:'100%'
+        },
+    },
+    view:{
+        marginTop:'20%',
+        width:'90%',
+        gap:10,
+        justifyContent:'center',
+        alignItems:'center'
+    },
+    response:{
+        backgroundColor:Colors.boxColor,
+        padding:20,
+        borderRadius:10,
+        width:'100%',
+        justifyContent:'flex-start',
+        alignItems:'center',
+        gap:10,
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: 1 },
+        shadowOpacity: 0.8,
+        shadowRadius: 5,  
+        elevation: 10,
+        marginBottom:10,
+        zIndex:5,
+        title:{
+            fontSize:20,
+            fontFamily:'Medium',
+            textTransform:'capitalize'
+        },
+        result:{
+            backgroundColor:'darkblue',
+            padding:20,
+            width:'100%',
+            gap:10,
+            borderRadius:10
+
+        },
+        linkName:{
+            color:'#b5b5b5',
+            fontFamily:'Regular',
+            fontSize:10
+        },
+        linkValue:{
+            color:'white',
+            fontFamily:'Medium',
+            fontSize:12
+        },
+        btns:{
+            width:'100%',
+            gap:10,
+            marginTop:20
+        },
+        btn:{
+            padding:10,
+            borderColor:Colors.mainColor,
+            borderWidth:2,
+            borderRadius:5,
+            text:{
+                textAlign:'center',
+                textAlignVertical:'center',
+                textTransform:'uppercase',
+                fontFamily:'Medium',
+                fontSize:15,
+                color:'white'
+            },
+            backgroundColor:Colors.mainColor
+        }
+    },
+    scanBtn:{
+        width:'60%',
+        backgroundColor:Colors.secColor,
+        padding:10,
+        text:{
+            fontFamily:'Medium',
+            fontSize:16,
+            color:'white',
+            textAlign:'center',
+            textAlignVertical:'center'
+        },
+        borderRadius:40,
+    },
+    lowerTab:{
+        display:'flex',
+        flexDirection:'row',
+        gap:10,
+        padding:10,
+        backgroundColor:Colors.mainColor,
+        marginBottom:10,
+        width:'50%',
+        justifyContent:'center',
+        alignItems:'center',
+        borderRadius:100,
+        title:{
+            fontFamily:'Regular',
+            fontSize:15,
+            textTransform:'uppercase',
+            color:'white'
+        }
+    },
+    scanView:{
+        gap:10,
+        title:{
+            fontFamily:'Bold',
+            fontSize:30
+        },
+        width:'100%',
+        justifyContent:'center',
+        alignItems:'center'
+    },
+    loader:{
+        width:'100%',
+        height:Dimensions.get('screen').height - StatusBar.currentHeight,
+        gap:30,
+        justifyContent:'center',
+        alignItems:'center',
+        title:{
+            fontFamily:'Medium',
+            fontSize:25,
+            textAlign:'center'
+        }
+    },
+    viewPermission:{
+        width:'100%',
+        justifyContent:'center',
+        alignItems:'center',
+        
+    }
+});
+
+export default HomeStyleSheet;

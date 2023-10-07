@@ -1,0 +1,30 @@
+{
+  "expo": {
+    "name": "barCodeScanner",
+    "slug": "barCodeScanner",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/Images/homeImage.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/Images/splash-new.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/Images/homeImage.png",
+        "backgroundColor": "#ffffff"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}
